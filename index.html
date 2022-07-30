@@ -6,11 +6,12 @@
     <title>JigSaw_AT</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="TemplateData/UnityProgress.javascript"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-        UnityLoader.compatibilityCheck=function(e,t,r){t();};
-        UnityLoader.instantiate("gameContainer", "Build/JigSaw_v1.15..json", {onProgress: UnityProgress});
+                UnityLoader.compatibilityCheck=function(e,t,r){t();};
+
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/JigSaw_v1.9.json", {onProgress: UnityProgress});
     </script>
     <style>
         * {
